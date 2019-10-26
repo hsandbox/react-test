@@ -6,7 +6,7 @@ const timeout = msec =>
     setTimeout(resolve, msec);
   });
 
-const LazyLoadComponent2 = () => {
+const OtherComponent = () => {
   if (!renderText) {
     throw new Promise(resolve => {
       timeout(1000).then(() => {
@@ -19,4 +19,4 @@ const LazyLoadComponent2 = () => {
   return <p>{renderText}</p>;
 };
 
-export default LazyLoadComponent2;
+export default OtherComponent;

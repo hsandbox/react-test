@@ -11,7 +11,7 @@ import { UseEffectSample } from "./component/useEffectSample";
 
 import { UnContextApp, ContextApp, ContextAppHooks } from "./component/context";
 
-import { LazyLoadComponent } from "./component/codeSplitting1";
+import { LazyLoadComponent } from "./component/codeSplitting";
 
 import { ErrorBoundary, BuggyCounter } from "./component/errorBoundary";
 
