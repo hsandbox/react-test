@@ -6,14 +6,11 @@ import {
   UseStateSample2,
   UseStateSample3
 } from "./component/useStateSample";
-
 import { UseEffectSample } from "./component/useEffectSample";
-
 import { UnContextApp, ContextApp, ContextAppHooks } from "./component/context";
-
 import { LazyLoadComponent } from "./component/codeSplitting";
-
 import { ErrorBoundary, BuggyCounter } from "./component/errorBoundary";
+import SuspenseList from "./component/suspenseList";
 
 const title = "React Test Flight";
 
@@ -39,6 +36,8 @@ ReactDOM.createRoot(document.getElementById("app")).render(
     <ErrorBoundary>
       <BuggyCounter />
     </ErrorBoundary>
+    <hr />
+    <SuspenseList />
   </>
 );
 
