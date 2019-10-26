@@ -15,19 +15,27 @@ import { LazyLoadComponent } from "./component/codeSplitting1";
 
 import { ErrorBoundary, BuggyCounter } from "./component/errorBoundary";
 
-const title = "My Minimal React Webpack Babel Setup";
+const title = "React Test Flight";
 
 ReactDOM.createRoot(document.getElementById("app")).render(
   <>
     <p>{title}</p>
     <UseStateSample />
+    <hr />
     <UseStateSample2 />
+    <hr />
     <UseStateSample3 />
+    <hr />
     <UseEffectSample />
+    <hr />
     <UnContextApp />
+    <hr />
     <ContextApp />
+    <hr />
     <ContextAppHooks />
+    <hr />
     <LazyLoadComponent />
+    <hr />
     <ErrorBoundary>
       <BuggyCounter />
     </ErrorBoundary>
