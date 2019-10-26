@@ -17,7 +17,7 @@ import { ErrorBoundary, BuggyCounter } from "./component/errorBoundary";
 
 const title = "My Minimal React Webpack Babel Setup";
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById("app")).render(
   <>
     <p>{title}</p>
     <UseStateSample />
@@ -31,8 +31,7 @@ ReactDOM.render(
     <ErrorBoundary>
       <BuggyCounter />
     </ErrorBoundary>
-  </>,
-  document.getElementById("app")
+  </>
 );
 
 module.hot.accept();
