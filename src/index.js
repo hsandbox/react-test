@@ -6,6 +6,7 @@ import {
   UseStateSample2,
   UseStateSample3
 } from "./component/useStateSample";
+import { UseReducerSample } from "./component/useReducerSample";
 import { UseEffectSample } from "./component/useEffectSample";
 import { UnContextApp, ContextApp, ContextAppHooks } from "./component/context";
 import { LazyLoadComponent } from "./component/codeSplitting";
@@ -22,6 +23,8 @@ ReactDOM.createRoot(document.getElementById("app")).render(
     <UseStateSample2 />
     <hr />
     <UseStateSample3 />
+    <hr />
+    <UseReducerSample />
     <hr />
     <UseEffectSample />
     <hr />
